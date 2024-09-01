@@ -1,0 +1,231 @@
+body{
+    background-color:#D3D3D3 ;
+}
+
+header {
+    background-color: #002366;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+/* Icon and text styling */
+.icon {
+    fill: white; /* Ensure the icon is white */
+}
+
+a.d-flex {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Adjust the SVG size if needed */
+.icon {
+    width: 27px;
+    height: 27px;
+    margin-left: 10px;
+    fill: #D4AF37;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    a.d-flex {
+        justify-content: center;
+    }
+}
+
+
+.btn-primary:hover {
+    background-color: #e9b60f;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #D4AF37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    header .nav {
+        justify-content: center;
+    }
+}
+
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between inputs */
+    max-width: 400px; /* Adjust to desired width */
+    margin: auto;
+}
+
+/* Input box styling */
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+    border-color: #002366; /* Dark blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 35, 102, 0.5); /* Soft blue shadow */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+input[type="text"]::placeholder {
+    color: #999; /* Light grey placeholder text */
+    opacity: 1; /* Ensures placeholder is visible */
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #002366; /* Match header color */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2
+}
+
+.output-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #002366;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;    /* Ensures text stays within the box */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+}
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #002366; /* Background color of the footer */
+    color: white; /* Default text color in the footer */
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Align the copyright text */
+.footer .copyright-text {
+    margin-left: auto; /* Center horizontally */
+}
+
+/* Center the icon */
+.footer .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon styling */
+.icon {
+    fill: #D4AF37; /* Icon color */
+}
+
+/* List styling */
+.footer .nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end */
+}
+
+
+/* Hover effect */
+.nav-link:hover {
+    color: #D4AF37; /* Hover color */
+}
+
+/* Footer-specific styles */
+.footer .nav .nav-link {
+    color: white; /* Ensure consistent default color */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.5rem 0;
+    }
+
+    .footer .copyright-text {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px; /* Adjust to fit your layout */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 15px; /* Add some horizontal padding */
+}
+
+/* Speech section styling */
+.speech {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 0 auto; /* Center the speech div horizontally */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+/* Heading styling */
+.speech h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    color: #002366; /* Header color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Paragraph styling */
+.speech p {
+    font-size: 1rem; /* Adjust as needed */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Text color */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Strong tag styling */
+.speech strong {
+    font-weight: bold;
+    color: #FFA500; /* Emphasize important text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .speech {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
